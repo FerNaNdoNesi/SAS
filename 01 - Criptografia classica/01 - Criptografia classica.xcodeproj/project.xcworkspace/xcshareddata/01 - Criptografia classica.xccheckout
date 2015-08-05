@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C370FAF8-71FF-4565-9F48-A25470B4F8F9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2E4C493D1C11666D0062E9B6E8590B0CB272B0B8</key>
+		<string>https://github.com/FerNaNdoNesi/SAS-Trabalhos.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>01 - Criptografia classica/01 - Criptografia classica.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2E4C493D1C11666D0062E9B6E8590B0CB272B0B8</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/FerNaNdoNesi/SAS-Trabalhos.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2E4C493D1C11666D0062E9B6E8590B0CB272B0B8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2E4C493D1C11666D0062E9B6E8590B0CB272B0B8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SAS-Trabalhos</string>
+		</dict>
+	</array>
+</dict>
+</plist>
