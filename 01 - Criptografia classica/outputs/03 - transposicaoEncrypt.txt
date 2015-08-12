@@ -1,1 +1,19 @@
-[['U', 'm', 'a', ' ', 'm', 'a', 'n', 'e', 'i', 'r', 'a', ' ', 's', 'i', 'm', 'p', 'l', 'e', 's', ' ', 'e', ' ', 'a', 'r', 'c', 'a', 'i', 'c', 'a', ' ', 'd', 'e', ' ', 'c', 'r', 'i', 'p', 't', 'o', 'g', 'r', 'a', 'f', 'i', 'a', ',', ' ', 'm', 'a', 's'], [' ', 'a', 'i', 'n', 'd', 'a', ' ', 'a', 's', 's', 'i', 'm', ' ', '\xc3', '\xba', 't', 'i', 'l', '.', ' ', '\n', '\n', 'J', '\xc3', '\xa1', ' ', 'o', 'u', 'v', 'i', 'u', ' ', 'f', 'a', 'l', 'a', 'r', ' ', 'd', 'a', ' ', 'c', 'i', 'f', 'r', 'a', ' ', 'd', 'e', ' '], ['C', '\xc3', '\xa9', 's', 'a', 'r', '?', ' ', 'p', 'r', 'o', 'v', 'a', 'v', 'e', 'l', 'm', 'e', 'n', 't', 'e', ' ', 'n', '\xc3', '\xa3', 'o', ',', ' ', 'p', 'o', 'r', 'q', 'u', 'e', ' ', 'e', 's', 't', 'e', ' ', 'm', '\xc3', '\xa9', 't', 'o', 'd', 'o', ' ', 'd', 'e'], [' ', '\xc3', '\xa9', ' ', 't', '\xc3', '\xa3', 'o', ',', 'm', 'a', 'i', 's', ' ', 't', '\xc3', '\xa3', 'o', ' ', 'a', 'n', 't', 'i', 'g', 'o', ' ', 'q', 'u', 'e', ' ', 'e', 'r', 'a', ' ', 'u', 's', 'a', 'd', 'o', ' ', 'n', 'o', 's', ' ', 't', 'e', 'm', 'p', 'o', 's'], [' ', 'd', 'e', ' ', 'R', 'o', 'm', 'a', ' ', 'p', 'e', 'l', 'o', ' ', 'I', 'm', 'p', 'e', 'r', 'a', 'd', 'o', 'r', ' ', 'p', 'a', 'r', 'a', ' ', 'e', 'n', 'v', 'i', 'a', 'r', ' ', 'm', 'e', 'n', 's', 'a', 'g', 'e', 'n', 's', ' ', 's', 'e', 'm', ' '], ['q', 'u', 'e', ' ', 'e', 'l', 'a', 's', ' ', 'p', 'u', 'd', 'e', 's', 's', 'e', 'm', ' ', 's', 'e', 'r', ' ', 'd', 'e', 'c', 'i', 'f', 'r', 'a', 'd', 'a', 's', ' ', 'p', 'o', 'r', ' ', 'p', 'e', 's', 's', 'o', 'a', 's', ' ', 'i', 'n', 'd', 'e', 's'], ['e', 'j', '\xc3', '\xa1', 'v', 'e', 'i', 's', '.', '\n', '\n', 'A', ' ', 'c', 'i', 'f', 'r', 'a', ' ', 'c', 'o', 'n', 's', 'i', 's', 't', 'e', ' ', 'e', 'm', ' ', 's', 'u', 'b', 's', 't', 'i', 't', 'u', 'i', 'r', ' ', 'a', 's', ' ', 'l', 'e', 't', 'r', 'a'], ['s', ' ', 'd', 'e', ' ', 'u', 'm', 'a', ' ', 'm', 'e', 'n', 's', 'a', 'g', 'e', 'm', ' ', 'p', 'o', 'r', ' ', 's', 'e', 'u', 's', ' ', 's', 'u', 'c', 'e', 's', 's', 'o', 'r', 'e', 's', ' ', 'n', 'o', ' ', 'a', 'l', 'f', 'a', 'b', 'e', 't', 'o', ' '], ['d', 'e', ' ', 'a', 'c', 'o', 'r', 'd', 'o', ' ', 'c', 'o', 'm', ' ', 'a', ' ', 'c', 'h', 'a', 'v', 'e', '.', '\n', '\n', 'E', 'x', ':', ' ', 'C', 'h', 'a', 'v', 'e', '=', '1', '\n', '\n', 'S', 'e', ' ', 'a', ' ', 'f', 'r', 'a', 's', 'e', ' ', 'a', ' '], ['s', 'e', 'r', ' ', 'e', 'n', 'v', 'i', 'a', 'd', 'a', ' ', 'f', 'o', 's', 's', 'e', ' ', ':', ' ', 'V', 'O', 'L', '\n', '\n', 's', 'e', 'r', 'i', 'a', ' ', 's', 'o', 'm', 'a', 'd', 'o', ' ', '1', ' ', 'a', ' ', 'l', 'e', 't', 'r', 'a', ' ', 'V', ' '], ['=', ' ', 'X', '\n', 's', 'e', 'r', 'i', 'a', ' ', 's', 'o', 'm', 'a', 'd', 'o', ' ', '1', ' ', 'a', ' ', 'l', 'e', 't', 'r', 'a', ' ', 'O', ' ', '=', ' ', 'P', '\n', 's', 'e', 'r', 'i', 'a', ' ', 's', 'o', 'm', 'a', 'd', 'o', ' ', '1', ' ', 'a', ' '], ['l', 'e', 't', 'r', 'a', ' ', 'L', ' ', ' ', '=', ' ', 'M', '\n', '\n', 'E', 'n', 't', '\xc3', '\xa3', 'o', ' ', 'V', 'O', 'L', ' ', 'c', 'r', 'i', 'p', 't', 'o', 'g', 'r', 'a', 'f', 'a', 'd', 'o', ' ', 'p', 'e', 'l', 'a', ' ', 'l', '\xc3', '\xb3', 'g', 'i', 'c'], ['a', ' ', 'd', 'e', ' ', 'c', '\xc3', '\xa9', 's', 'a', 'r', ' ', '\xc3', '\xa9', ':', '\n', '\n', 'X', 'P', 'M', '!', '\n', '\n', 'D', 'i', 'v', 'i', 'r', 't', 'a', '-', 's', 'e']]
+Uaapeadir, ait
+ ua aCroleoremd √a√n esne oemdan a qlueriarsiee
+fot trlsueersee bdoc exa
+assnasVs dar=eso a ro l  n coae√acr
+!v-mn l iepa a mi
+o rc √?vm ,qs√o√£i£tqraomdmlporvmgsuadm fs onjiArnesi e mnm  ssaeeroc.:v
+ eev eOeso a ro l Pim1eLMtVrgdl≥ √ 
+
+isaeseac tfmia lJuf id© aen ut© ©osoiuadspeaoeraieeeese dr pad√s as utatdas sss lt dmh
+ eSf rif Lro l Xim1eO
+aa t 
+√Oiroagd©√X
+re iisracoians√.√vadfespvn√peetd ,  ge o o   r  annm  sseapese°.c iebusre apeuonfoao a
+C=era ao:
+im1eV
+aa t s dar 
+£Lpa  ies©PDt mrm c rgasds∫ °ilar aret£o  oetmtao u tsRpIaperss epsecdos sv
+icsmsi a mgoucroa c avEh1 a eds 
+aa t s dar=eso a=Eo tfplc a:Mia 

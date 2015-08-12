@@ -13,12 +13,14 @@ def monta_matriz(conteudo, key):
 	matriz = []
 	for l in range(linha):      
 		linha = []
-		for c in range(coluna):
-			campo = conteudo[count]
-			count += 1
-			linha = linha + [campo]
+		for c in range(coluna):			
 			if(count > (len(conteudo)-1)): 
-				break
+				campo = ' '
+				linha = linha + [campo]
+			else:
+				campo = conteudo[count]
+				linha = linha + [campo]
+			count += 1
 
 		matriz = matriz + [linha]
 	return matriz
@@ -32,23 +34,21 @@ def transposta(matriz):
 		matrizRetorno.append(linha)
 	return matrizRetorno
 
-def mostra_matriz(matriz, conteudo):
-	count = 0
-	print 'Matriz'     
-	for i in range(len(matriz)):
-		for j in range(len(matriz[0])):            
-			print matriz[i][j]
-			if(count == (len(conteudo)-1)): # para nao dar erro de indexacao
-				return;
-			count += 1
-		print
-	print
+def printMatrix(matrix):
+	text_decrypt = ''
+	for i, element in enumerate(matrix):
+		#print ''.join(element)
+		text_decrypt = text_decrypt+''.join(element)
+	return text_decrypt
 
 def transposicaoEncrypt(conteudo, key):
-	matriz = monta_matriz(conteudo, key)
-	#print matriz
-	#Tmatriz = transposta(matriz)
+	matriz = monta_matriz(conteudo, key)	
+	Tmatriz = transposta(matriz)
+	
+	return printMatrix(Tmatriz)
 
-
-
-	return str(matriz)
+def transposicaoDecrypt(conteudo, key):
+	matriz = monta_matriz(conteudo, key)	
+	Tmatriz = transposta(matriz)
+	
+	return printMatrix(Tmatriz)

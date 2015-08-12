@@ -40,7 +40,7 @@ def gravarArquivo(conteudo, nomeArq):
 print 'Inicializado...'
 
 conteudoOriginal = lerEntrada("inputs/entrada.txt")
-chaveNum = 50
+chaveNum = 5
 
 
 print 'Encryptando Ceasar... (gravado) key = '+str(chaveNum)
@@ -54,3 +54,7 @@ gravarArquivo(ceasarDecrypt, 'outputs/02 - ceasarDecrypt.txt')
 print 'Encryptando Transposicao... (gravado) key = '+str(chaveNum)
 transposicaoEncrypt = transposicao.transposicaoEncrypt(conteudoOriginal, chaveNum)
 gravarArquivo(transposicaoEncrypt, 'outputs/03 - transposicaoEncrypt.txt')
+
+print 'Decryptando Transposicao... (gravado) key = '+str(chaveNum)
+transposicaoDecrypt = transposicao.transposicaoDecrypt(transposicaoEncrypt, chaveNum)
+gravarArquivo(transposicaoDecrypt, 'outputs/04 - transposicaoDecrypt.txt')
