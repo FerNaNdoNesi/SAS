@@ -3,7 +3,7 @@ import struct
 import os
 import math
 
-def monta_matriz(conteudo, key):
+def monta_matriz_Normal(conteudo, key):
 	count = 0
 	tamanho = len(conteudo)	
 	linha = int(math.ceil(float(tamanho)/float(key)))
@@ -25,7 +25,29 @@ def monta_matriz(conteudo, key):
 		matriz = matriz + [linha]
 	return matriz
 
-def transposta(matriz):
+def monta_matriz_Transp(conteudo, key):
+	count = 0
+	tamanho = len(conteudo)	
+	coluna = int(math.ceil(float(tamanho)/float(key)))
+	linha = key
+	
+	# Criando matriz
+	matriz = []
+	for l in range(linha):      
+		linha = []
+		for c in range(coluna):			
+			if(count > (len(conteudo)-1)): 
+				campo = ' '
+				linha = linha + [campo]
+			else:
+				campo = conteudo[count]
+				linha = linha + [campo]
+			count += 1
+
+		matriz = matriz + [linha]
+	return matriz
+
+def MatrizTransposta(matriz):
 	matrizRetorno=[]
 	for j in range(len(matriz[0])):
 		linha=[]
@@ -37,18 +59,17 @@ def transposta(matriz):
 def printMatrix(matrix):
 	text_decrypt = ''
 	for i, element in enumerate(matrix):
-		#print ''.join(element)
 		text_decrypt = text_decrypt+''.join(element)
 	return text_decrypt
 
 def transposicaoEncrypt(conteudo, key):
-	matriz = monta_matriz(conteudo, key)	
-	Tmatriz = transposta(matriz)
+	matriz = monta_matriz_Normal(conteudo, key)
+	Tmatriz = MatrizTransposta(matriz)
 	
 	return printMatrix(Tmatriz)
 
-def transposicaoDecrypt(conteudo, key):
-	matriz = monta_matriz(conteudo, key)	
-	Tmatriz = transposta(matriz)
+def transposicaoDecrypt(conteudo, key):	
+	matriz = monta_matriz_Transp(conteudo, key)	
+	Tmatriz = MatrizTransposta(matriz)	
 	
 	return printMatrix(Tmatriz)

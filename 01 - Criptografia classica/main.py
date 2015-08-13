@@ -22,6 +22,7 @@ import math
 #minhas bibliotecas#
 import ceasar
 import transposicao
+import vigenere
 #minhas bibliotecas#
 
 def lerEntrada(nomeArq):
@@ -40,7 +41,8 @@ def gravarArquivo(conteudo, nomeArq):
 print 'Inicializado...'
 
 conteudoOriginal = lerEntrada("inputs/entrada.txt")
-chaveNum = 5
+chaveNum = 3
+chaveStr = 'chave'
 
 
 print 'Encryptando Ceasar... (gravado) key = '+str(chaveNum)
@@ -58,3 +60,11 @@ gravarArquivo(transposicaoEncrypt, 'outputs/03 - transposicaoEncrypt.txt')
 print 'Decryptando Transposicao... (gravado) key = '+str(chaveNum)
 transposicaoDecrypt = transposicao.transposicaoDecrypt(transposicaoEncrypt, chaveNum)
 gravarArquivo(transposicaoDecrypt, 'outputs/04 - transposicaoDecrypt.txt')
+
+print 'Encryptando Vigenere... (gravado) key = '+chaveStr
+vigenereEncrypt = vigenere.vigenereEncrypt(conteudoOriginal, chaveStr)
+gravarArquivo(vigenereEncrypt, 'outputs/05 - vigenereEncrypt.txt')
+
+print 'Decryptando Vigenere... (gravado) key = '+chaveStr
+vigenereDecrypt = vigenere.vigenereDecrypt(vigenereEncrypt, chaveStr)
+gravarArquivo(vigenereDecrypt, 'outputs/05 - vigenereDecrypt.txt')
