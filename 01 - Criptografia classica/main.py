@@ -23,6 +23,7 @@ import math
 import ceasar
 import transposicao
 import vigenere
+import substituicao
 #minhas bibliotecas#
 
 def lerEntrada(nomeArq):
@@ -67,4 +68,17 @@ gravarArquivo(vigenereEncrypt, 'outputs/05 - vigenereEncrypt.txt')
 
 print 'Decryptando Vigenere... (gravado) key = '+chaveStr
 vigenereDecrypt = vigenere.vigenereDecrypt(vigenereEncrypt, chaveStr)
-gravarArquivo(vigenereDecrypt, 'outputs/05 - vigenereDecrypt.txt')
+gravarArquivo(vigenereDecrypt, 'outputs/06 - vigenereDecrypt.txt')
+
+mat_rand = substituicao.random_not_repeat(conteudoOriginal)
+gravarArquivo(''.join(str(mat_rand)), 'outputs/09 - matRandom.txt')
+
+print 'Encryptando Substituicao... (gravado)'
+#print
+#print mat_rand
+matrizCrip = substituicao.substituicaoEncrypt(mat_rand, len(conteudoOriginal))
+gravarArquivo(''.join(str(matrizCrip)), 'outputs/07 - substituicaoEncrypt.txt')
+
+print 'Decryptando Substituicao... (gravado)'
+textDescrip = substituicao.substituicaoDecrypt(mat_rand, matrizCrip)
+gravarArquivo(textDescrip, 'outputs/08 - substituicaoDecrypt.txt')

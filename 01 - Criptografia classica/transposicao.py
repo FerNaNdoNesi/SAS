@@ -58,6 +58,7 @@ def MatrizTransposta(matriz):
 
 def printMatrix(matrix):
 	text_decrypt = ''
+	#print matrix
 	for i, element in enumerate(matrix):
 		text_decrypt = text_decrypt+''.join(element)
 	return text_decrypt
