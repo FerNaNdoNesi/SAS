@@ -134,9 +134,28 @@ def T2_SearchKey():
 		resultado = testa_igualdade(conteudoClaro, textoLimpo)
 		print resultado	
 
+########################### INICIO TRABALHO 3 ###########################
+def T3_SearchKey():
+
+	print '1 Ceasar'
+	print '2 Transposicao'
+	print '3 Vigenere'
+	print '4 Substituicao'
+	tipo = int(raw_input())
+
+	if tipo == 1:
+		print'Teste Ceasar'
+		conteudoEscuro = lerEntrada("outputs/01 - ceasarEncrypt.txt")	
+		conteudoDicionario = lerEntrada("inputs/dicionario.txt")	
+
+		ceasar.ceasarSearchKey_2(conteudoEscuro, conteudoDicionario)
+		
+
+
 ############################# INICIO SISTEMA #############################
 
 print 'Inicializado...'
 
 #T1_Encrypt()
 T2_SearchKey()
+#T3_SearchKey()
