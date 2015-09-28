@@ -47,20 +47,33 @@ def retornaVetorWord(tstCeasar):
 			
 
 def ceasarSearchKey_2(textoEscuro, textoDicionario):	
-	for x in xrange (20,22):
+	#print textoDicionario
+	vetorKey = []
+	vetorQtd = []
+	indexKey = 0
+	indexQtd = 0
+	for x in xrange (10,30):
+		contador = 0
 		key = x
 		tstCeasar = ceasarDecrypt(textoEscuro, key)
 		vetorTexto = retornaVetorWord(tstCeasar)
 		vetorDicionario = retornaVetorWord(textoDicionario)		
-		
-		if vetorTexto != -1:	
-			print 'gggg'+str(vetorTexto[0])
+
+		if vetorTexto != -1 and vetorDicionario != -1:				
 			for y in vetorTexto:
 				for z in vetorDicionario:
 					if y == z:
-						print y+' |igualdade| '+z
+						#print y+' |igualdade| '+z
+						contador += 1
+		vetorKey.append(key)
+		vetorQtd.append(contador)
+		if contador > indexQtd:
+			indexQtd = contador
+			indexKey = key
 
 
+	print 'Chave encontrada: '+str(indexKey)+' Quantidade palavras iguais: '+str(indexQtd)
 
-	print 'retorno'+str(key)
-	return 0
+	#for c in vetorQtd:
+	#	print 'x'+str(c)
+	return indexKey

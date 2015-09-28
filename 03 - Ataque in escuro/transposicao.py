@@ -82,3 +82,56 @@ def transposicaoSearchKey(textoClaro, textoEscuro):
 		if(textoClaro == tstTransposicao):			
 			return key
 	return 0
+
+def retornaVetorWord(tstTransposicao):
+	listCeasar = list(tstTransposicao)
+	aux = ''
+	vetor = []
+	flag = -1
+	for x in tstTransposicao:		
+		if x != ' ':
+			#print 'nao espaco'+ str(aux)
+			aux += x 
+		else:
+			#print 'eh espaco'+ str(aux)
+			flag = 0
+			vetor.append(aux)
+			aux = ''
+	#for x in vetor:
+	#	print x
+	#	print
+	if flag == -1:
+		return -1
+	return vetor
+
+def transposicaoSearchKey_2(textoEscuro, textoDicionario):	
+	#print textoDicionario
+	#vetorKey = []
+	#vetorQtd = []
+	indexKey = 0
+	indexQtd = 0
+	for x in xrange (10,30):
+		contador = 0
+		key = x
+		tstTransposicao = transposicaoDecrypt(textoEscuro, key)
+		vetorTexto = retornaVetorWord(tstTransposicao)
+		vetorDicionario = retornaVetorWord(textoDicionario)		
+
+		if vetorTexto != -1 and vetorDicionario != -1:				
+			for y in vetorTexto:
+				for z in vetorDicionario:
+					if y == z:
+						#print y+' |igualdade| '+z
+						contador += 1
+		#vetorKey.append(key)
+		#vetorQtd.append(contador)
+		if contador > indexQtd:
+			indexQtd = contador
+			indexKey = key
+
+
+	print 'Chave encontrada: '+str(indexKey)+' Quantidade palavras iguais: '+str(indexQtd)
+
+	#for c in vetorQtd:
+	#	print 'x'+str(c)
+	return indexKey

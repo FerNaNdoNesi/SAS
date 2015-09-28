@@ -1,3 +1,5 @@
+import itertools
+
 def vigenereEncrypt(conteudo, key):
 	text_encrypt = ""
 	tConteudo = len(conteudo)
@@ -68,3 +70,65 @@ def vigenereSearchKey_completa(textoClaro, textoEscuro):
 		chave_com += chr(ord_ch)
 		i +=1
 	return chave_com
+
+def retornaVetorWord(tstTransposicao):
+	listCeasar = list(tstTransposicao)
+	aux = ''
+	vetor = []
+	flag = -1
+	for x in tstTransposicao:		
+		if x != ' ':
+			#print 'nao espaco'+ str(aux)
+			aux += x 
+		else:
+			#print 'eh espaco'+ str(aux)
+			flag = 0
+			vetor.append(aux)
+			aux = ''
+	#for x in vetor:
+	#	print x
+	#	print
+	if flag == -1:
+		return -1
+	return vetor
+
+def teste():
+	produto = itertools.product('abcd123', repeat=4)
+
+	for chave in produto:
+		print "".join(chave)
+
+def vigenereSearchKey_2(textoEscuro, textoDicionario):	
+	#print textoDicionario
+	#vetorKey = []
+	#vetorQtd = []
+	indexKey = 0
+	indexQtd = 0
+	produto = itertools.product('ren24', repeat=5)
+
+	for key in produto:
+		print "testando: "+"".join(key)
+		contador = 0
+		
+		tstVigenere = vigenereDecrypt(textoEscuro, "".join(key))
+		vetorTexto = retornaVetorWord(tstVigenere)
+		vetorDicionario = retornaVetorWord(textoDicionario)		
+
+		if vetorTexto != -1 and vetorDicionario != -1:				
+			for y in vetorTexto:
+				for z in vetorDicionario:
+					if y == z:
+						print y+' |igualdade| '+z
+						contador += 1
+		#vetorKey.append(key)
+		#vetorQtd.append(contador)
+		if contador > indexQtd:
+			indexQtd = contador
+			indexKey = key
+
+
+	print 'Chave encontrada: '+str(indexKey)+' Quantidade palavras iguais: '+str(indexQtd)
+
+	#for c in vetorQtd:
+	#	print 'x'+str(c)
+	return indexKey

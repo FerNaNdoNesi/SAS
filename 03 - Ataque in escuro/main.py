@@ -31,7 +31,7 @@ def lerEntrada(nomeArq):
 	arquivo = open(nomeArq, "rb")		
 	conteudo = arquivo.read()	
 	arquivo.close()
-	return conteudo
+	return conteudo #[0:240]
 
 def gravarArquivo(conteudo, nomeArq):
 	arquivo = open(nomeArq, 'wb')
@@ -48,8 +48,8 @@ def testa_igualdade(conteudoOriginal, conteudoDescriptografado):
 
 def T1_Encrypt():
 	conteudoOriginal = lerEntrada("inputs/entrada.txt")
-	chaveNum = 21
-	chaveStr = 'ChaveDeTeste'
+	chaveNum = 28
+	chaveStr = 'ren24'
 
 	print 'Encryptando Ceasar... (gravado) key = '+str(chaveNum)
 	ceasarEncrypt = ceasar.ceasarEncrypt(conteudoOriginal, chaveNum)
@@ -140,7 +140,6 @@ def T3_SearchKey():
 	print '1 Ceasar'
 	print '2 Transposicao'
 	print '3 Vigenere'
-	print '4 Substituicao'
 	tipo = int(raw_input())
 
 	if tipo == 1:
@@ -148,7 +147,27 @@ def T3_SearchKey():
 		conteudoEscuro = lerEntrada("outputs/01 - ceasarEncrypt.txt")	
 		conteudoDicionario = lerEntrada("inputs/dicionario.txt")	
 
-		ceasar.ceasarSearchKey_2(conteudoEscuro, conteudoDicionario)
+		keyEncontrada = ceasar.ceasarSearchKey_2(conteudoEscuro, conteudoDicionario)
+		conteudoDescriptografado = ceasar.ceasarDecrypt(conteudoEscuro, keyEncontrada)
+		#print conteudoDescriptografado
+
+	if tipo == 2:
+		print'Teste Transposicao'
+		conteudoEscuro = lerEntrada("outputs/03 - transposicaoEncrypt.txt")	
+		conteudoDicionario = lerEntrada("inputs/dicionario.txt")	
+
+		keyEncontrada = transposicao.transposicaoSearchKey_2(conteudoEscuro, conteudoDicionario)
+		conteudoDescriptografado = transposicao.transposicaoDecrypt(conteudoEscuro, keyEncontrada)
+		#print conteudoDescriptografado
+
+	if tipo == 3:
+		print'Teste Vigenere'
+		conteudoEscuro = lerEntrada("outputs/05 - vigenereEncrypt.txt")	
+		conteudoDicionario = lerEntrada("inputs/dicionario.txt")	
+
+		keyEncontrada = vigenere.vigenereSearchKey_2(conteudoEscuro, conteudoDicionario)
+		conteudoDescriptografado = vigenere.vigenereDecrypt(conteudoEscuro, keyEncontrada)
+		#print conteudoDescriptografado
 		
 
 
@@ -157,5 +176,9 @@ def T3_SearchKey():
 print 'Inicializado...'
 
 #T1_Encrypt()
-T2_SearchKey()
-#T3_SearchKey()
+#T2_SearchKey()
+T3_SearchKey()
+
+#print "chamada"
+#vigenere.teste()
+#print "fim"
